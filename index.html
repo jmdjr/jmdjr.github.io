@@ -4,10 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Welcome</title>
+      <link rel="stylesheet" href="stylesheets/bootstrap.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
+      <script src="javascripts/bootstrap.js"></script>
+<!--    <script src="javascripts/respond.js"></script>-->
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -15,7 +17,22 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
+        <style>
+            .wrapper {
+                position: relative;
+                overflow: hidden;
+                padding: none;
+                margin:none;
+            }
+            iframe {
+                padding:none;
+            }      
+            #_cd_iframe {
+        overflow:hidden;
+        position: relative;
+        margin: 0px auto;
+      }
+        </style>
   </head>
   <body>
       <div id="header">
@@ -28,12 +45,17 @@
 
       <section>
         <div id="title">
+            
           <h1>Welcome to My Site!</h1>
           <p>John Davis Jr's Development Profile</p>
           <hr>
-          <iframe src="Pages/2-3-2015.html" style='border:none; height: 200px;width: 100%'></iframe>
+          
           <h3>About Me</h3>
             <p>Page Bio and information comming soon.</p>
+            <div class="wrapper" style="padding-bottom: 10px">
+                <script src="//fightforthefuture.github.io/countdown-widget/widget.min.js">
+                </script>
+            </div>
             <!--
             <embed width="700" height="600" src="http://chat.kongregate.com/gamez/0012/6336/live/PixelShip9000.swf?kongregate_game_version=1344242998">
             <p>My name is John Davis Jr, and I am a software Developer.  I have been struggling for a while trying to find work in the Interactive Entertainment industry</p>
