@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script src="javascripts/bootstrap.js"></script>
-<!--    <script src="javascripts/respond.js"></script>-->
+      <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -111,6 +110,9 @@ $ git checkout gh-pages
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
+      
+      <script>
+        var myDataRef = new Firebase('https://e911zfabbfw.firebaseio-demo.com/');
+      </script>
   </body>
 </html>
