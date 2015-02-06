@@ -1,14 +1,14 @@
 <!doctype html>
-<html>
+<html ng-app="jmdjr-portfolio">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Welcome</title>
-      <link rel="stylesheet" href="stylesheets/bootstrap.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
       <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -33,7 +33,7 @@
       }
         </style>
   </head>
-  <body>
+  <body ng-controller="HomeController">
       <div id="header">
         <nav>
           <li class="fork"><a href="https://github.com/jmdjr">View On GitHub</a></li>
@@ -42,6 +42,34 @@
 
     <div class="wrapper">
 
+            
+            <hr>
+            <span class="credits left">Project maintained by <a href="https://github.com/jmdjr">jmdjr</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-59309007-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+      
+      <script>
+        var myDataRef = new Firebase('https://e911zfabbfw.firebaseio-demo.com/');
+      </script>
+  </body>
+</html>
+
+
+<!--
       <section>
         <div id="title">
             
@@ -51,12 +79,14 @@
           
           <h3>About Me</h3>
             <p>Page Bio and information comming soon.</p>
-            <p>Hello {{'World'}}</p>
+            <p>Hello <input type=text ng-model="name">
+                <p ng-bind="name"></p>
+            </p>
             <div class="wrapper" style="padding-bottom: 10px">
                 <script src="//fightforthefuture.github.io/countdown-widget/widget.min.js">
                 </script>
             </div>
-            <!--
+            
             <embed width="700" height="600" src="http://chat.kongregate.com/gamez/0012/6336/live/PixelShip9000.swf?kongregate_game_version=1344242998">
             <p>My name is John Davis Jr, and I am a software Developer.  I have been struggling for a while trying to find work in the Interactive Entertainment industry</p>
 
@@ -92,28 +122,3 @@ $ git checkout gh-pages
 
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
 -->          
-            
-            <hr>
-            <span class="credits left">Project maintained by <a href="https://github.com/jmdjr">jmdjr</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-59309007-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-      
-      <script>
-        var myDataRef = new Firebase('https://e911zfabbfw.firebaseio-demo.com/');
-      </script>
-  </body>
-</html>
