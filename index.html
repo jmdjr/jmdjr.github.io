@@ -1,27 +1,26 @@
 <!doctype html>
-<html ng-app="jmdjr-portfolio">
+<html ng-app="jmdjrPortfolioModule">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Welcome</title>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+
         <style>
+            body {
+                position: relative;
+                display: block;
+                top: -5px; /* I Can't seem to find out where this is coming from*/
+            }
+            
             .wrapper {
                 position: relative;
                 overflow: hidden;
-                padding: none;
-                margin:none;
             }
             iframe {
                 padding:none;
@@ -33,25 +32,28 @@
       }
         </style>
   </head>
-  <body ng-controller="HomeController">
-      <div id="header">
-        <nav>
+  <body  style="margin-top: 0px; padding-top: 0px;">
+      <div id="header" style="position:relative">
+        <nav class="wrapper">
           <li class="fork"><a href="https://github.com/jmdjr">View On GitHub</a></li>
         </nav>
       </div><!-- end header -->
-
+      
+      <div class="wrapper">
+      <section class="col-lg-6"  ng-controller="HomeController" >
+          <div></div>
+      </section>
+      </div>
+      
+      
+<!-- footer -->
     <div class="wrapper">
-
-            
             <hr>
             <span class="credits left">Project maintained by <a href="https://github.com/jmdjr">jmdjr</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-      </section>
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-              <script type="text/javascript">
+          <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
           </script>
