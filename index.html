@@ -20,30 +20,74 @@
             
             .wrapper {
                 position: relative;
-                overflow: hidden;
             }
             iframe {
                 padding:none;
             }      
+            
             #_cd_iframe {
         overflow:hidden;
         position: relative;
         margin: 0px auto;
       }
+            
+            .enclose{
+                position: relative;
+                overflow: hidden;
+            }
+            .center{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .frame-wrapper {
+                margin-top: 20px;
+            }
+            
+            .frame {
+                height: 100px;
+            }
+            .frame.left {
+                border-right: solid 2px gray;
+            }
+            
+            .frame.top {
+                border-bottom: solid 2px gray;
+            }
+            .no-padding {
+                padding: 0px;
+            }
         </style>
   </head>
   <body  style="margin-top: 0px; padding-top: 0px;">
-      <div id="header" style="position:relative">
+      <div id="header" style="position:relative;">
         <nav class="wrapper">
           <li class="fork"><a href="https://github.com/jmdjr">View On GitHub</a></li>
         </nav>
-      </div><!-- end header -->
-      
-      <div class="wrapper">
-      <section class="col-lg-6"  ng-controller="HomeController" >
-          <div></div>
-      </section>
       </div>
+      <!-- end header -->
+      
+      
+      
+      <section class="wrapper frame-wrapper" >
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top left vcenter">
+          <h1>Skills</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top vcenter">
+          <h1>Work History</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame left ">
+          <h1 class="vcenter">Personal Projects</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 vcenter">
+          <h1>About Me</h1>
+      </div>
+      </section>
+      
+      
+      
+      
+      
+      
       
       
 <!-- footer -->
@@ -52,7 +96,6 @@
             <span class="credits left">Project maintained by <a href="https://github.com/jmdjr">jmdjr</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
-
           <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
