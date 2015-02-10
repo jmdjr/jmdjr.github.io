@@ -591,7 +591,6 @@ a:hover {
 a small {
   font-size: 11px;
   color: #666;
-  margin-top: -0.6em;
   display: block;
 }
 
@@ -816,7 +815,7 @@ section #title .credits {
 section #title .credits.left {
   float: left;
 }
-section #title .credits.right {
+section #title, .credits.right {
   float: right;
 }
 

@@ -41,11 +41,29 @@
             }
             .frame-wrapper {
                 margin-top: 20px;
+                margin-bottom: 20px;
             }
             
             .frame {
                 height: 100px;
+                display: table;
+                table-layout:fixed;
+                
+                padding-bottom: 10px;
+                padding-top: 10px;
+                
             }
+            
+            .frame-cell {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                border: solid 2px gray;
+                border-radius: 15px;
+                box-shadow: 5px 5px 15px;
+            }
+            
+/*
             .frame.left {
                 border-right: solid 2px gray;
             }
@@ -53,9 +71,20 @@
             .frame.top {
                 border-bottom: solid 2px gray;
             }
+            
+*/
             .no-padding {
                 padding: 0px;
             }
+            
+            .lead {
+/*                border: dashed 2px;*/
+            }
+            
+            .context-text {
+                color: #FF00FF;
+            }
+            
         </style>
   </head>
   <body  style="margin-top: 0px; padding-top: 0px;">
@@ -66,24 +95,29 @@
       </div>
       <!-- end header -->
       
-      
-      
-      <section class="wrapper frame-wrapper" >
+      <section class="wrapper lead">      
+          <h1 style="margin-top: 10px;">Welcome!</h1>
+<!--
+          <p>Jmdjr's Tavern</p>
+          <small class="context-text">A Software Developer sits at the stool next to you</small>
+-->
+</section>
+      <section class="wrapper frame-wrapper">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top left vcenter">
-          <h1>Skills</h1>
+          <h1 class="frame-cell">Skills</h1>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top vcenter">
-          <h1>Work History</h1>
+          <h1 class="frame-cell">Work History</h1>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame left ">
-          <h1 class="vcenter">Personal Projects</h1>
+          <h1 class="frame-cell">Projects</h1>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 vcenter">
-          <h1>About Me</h1>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame">
+          <h1 class="frame-cell">About Me</h1>
       </div>
       </section>
       
-      
+      <div class="wrapper"><div>Achievements</div></div>
       
       
       
@@ -93,9 +127,10 @@
 <!-- footer -->
     <div class="wrapper">
             <hr>
-            <span class="credits left">Project maintained by <a href="https://github.com/jmdjr">jmdjr</a></span>
+            <span class="credits left">Site designed by <a href="https://github.com/jmdjr">jmdjr</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
         </div>
+      
           <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
