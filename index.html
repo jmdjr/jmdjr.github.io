@@ -1,5 +1,5 @@
 <!doctype html>
-<html ng-app="jmdjrPortfolioModule">
+<html ng-app="jmdjrPortfolioApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">    
@@ -7,9 +7,12 @@
     <title>Welcome</title>
       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.12/angular-animate.min.js"></script>
+    <script src="https://code.angularjs.org/1.3.12/angular-route.min.js"></script>
+    <script src="/javascripts/ui-bootstrap-tpls-0.9.0.min.js"></script>
+    <script src="javascripts/jmdjrPortfolioApp.js"></script>
 
         <style>
             body {
@@ -26,20 +29,26 @@
             }      
             
             #_cd_iframe {
-        overflow:hidden;
-        position: relative;
-        margin: 0px auto;
-      }
+				overflow:hidden;
+				position: relative;
+				margin: 0px auto;
+      		}
             
             .enclose{
                 position: relative;
                 overflow: hidden;
             }
-            .center{
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .frame-wrapper {
+			
+			.noselect {
+			    -webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+			}
+            
+			.frame-wrapper {
                 margin-top: 20px;
                 margin-bottom: 20px;
             }
@@ -61,7 +70,13 @@
                 border: solid 2px gray;
                 border-radius: 15px;
                 box-shadow: 5px 5px 15px;
+				cursor:pointer;
             }
+			
+			.frame-cell:hover, .frame-cell:active {
+				background-color: #000000;
+				
+			}
             
 /*
             .frame.left {
@@ -102,22 +117,24 @@
           <small class="context-text">A Software Developer sits at the stool next to you</small>
 -->
 </section>
-      <section class="wrapper frame-wrapper">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top left vcenter">
-          <h1 class="frame-cell">Skills</h1>
+      <section class="wrapper frame-wrapper" ng-controller='AppController'>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top left noselect" ng-controller='SkillsController'>
+          <h1 class="frame-cell" ng-click="">Skills</h1>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top vcenter">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top noselect" ng-controller='WorkHistoryController'>
           <h1 class="frame-cell">Work History</h1>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame left ">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame left noselect" ng-controller='ProjectsController'>
           <h1 class="frame-cell">Projects</h1>
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame noselect" ng-controller='AboutMeController'>
           <h1 class="frame-cell">About Me</h1>
       </div>
       </section>
+<!--
       
       <div class="wrapper"><div>Achievements</div></div>
+-->
       
       
       
