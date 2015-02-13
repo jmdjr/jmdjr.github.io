@@ -168,6 +168,7 @@ a:focus {
 a:hover,
 a:active {
   outline: 0;
+  text-decoration:none;
 }
 
 /* =============================================================================
@@ -580,12 +581,12 @@ h3 {
 }
 
 a {
-  color: #ffcc00;
+  color: white;
   font-weight: 400;
   text-decoration: none;
 }
 a:hover {
-  color: #ffeb9b;
+  color: gray;
 }
 
 a small {

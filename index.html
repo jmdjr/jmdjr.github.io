@@ -118,18 +118,7 @@
 -->
 </section>
       <section class="wrapper frame-wrapper" ng-controller='AppController'>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top left noselect" ng-controller='SkillsController'>
-          <h1 class="frame-cell" ng-click="">Skills</h1>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame top noselect" ng-controller='WorkHistoryController'>
-          <h1 class="frame-cell">Work History</h1>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame left noselect" ng-controller='ProjectsController'>
-          <h1 class="frame-cell">Projects</h1>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 frame noselect" ng-controller='AboutMeController'>
-          <h1 class="frame-cell">About Me</h1>
-      </div>
+		  <ng-view></ng-view>
       </section>
 <!--
       

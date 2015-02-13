@@ -5,7 +5,12 @@ jmdjrPortfolioApp.config(function ($routeProvider){
         .when('/', 
 			{
 				controller: 'AppController',
-				templateUrl: 'index.html'
+				templateUrl: 'Pages/Navigation.html'
+			})
+		.when('/AboutMe',
+			{
+				controller: 'AppController',
+				templateUrl: 'AboutMe/index.html'
 			})
 		.otherwise({redirectTo: '/'});
 });
@@ -13,18 +18,18 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 jmdjrPortfolioApp.controller('AppController', function($scope) {
 });
 
-jmdjrPortfolioApp.controller('AboutMeController', function($scope) {
-    
-});
-
-jmdjrPortfolioApp.controller('ProjectsController', function($scope) {
-    
-});
-
-jmdjrPortfolioApp.controller('WorkHistoryController', function($scope) {
-    
-});
-
-jmdjrPortfolioApp.controller('SkillsController', function($scope) {
-    
-});
+//jmdjrPortfolioApp.controller('AboutMeController', function($scope) {
+//    
+//});
+//
+//jmdjrPortfolioApp.controller('ProjectsController', function($scope) {
+//    
+//});
+//
+//jmdjrPortfolioApp.controller('WorkHistoryController', function($scope) {
+//    
+//});
+//
+//jmdjrPortfolioApp.controller('SkillsController', function($scope) {
+//    
+//});
