@@ -6,7 +6,8 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 			{
 				controller: 'AppController',
 				templateUrl: 'index.html'
-			});
+			})
+		.otherwise({redirectTo: '/'});
 });
 
 jmdjrPortfolioApp.controller('AppController', function($scope) {
