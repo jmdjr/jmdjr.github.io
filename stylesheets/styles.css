@@ -586,7 +586,8 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: gray;
+  color: #666;
+  text-decoration: none;
 }
 
 a small {

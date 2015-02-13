@@ -1,4 +1,4 @@
-var jmdjrPortfolioApp = angular.module('jmdjrPortfolioApp',['ngRoute', 'ngAnimate', 'ui.bootstrap']);
+var jmdjrPortfolioApp = angular.module('jmdjrPortfolioApp',['ngRoute', 'ngAnimate']);
 
 jmdjrPortfolioApp.config(function ($routeProvider){
     $routeProvider
@@ -10,7 +10,7 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 		.when('/AboutMe',
 			{
 				controller: 'AppController',
-				templateUrl: 'AboutMe/index.html'
+				templateUrl: 'Pages/AboutMe/index.html'
 			})
 		.otherwise({redirectTo: '/'});
 });
