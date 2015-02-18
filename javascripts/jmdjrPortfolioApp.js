@@ -11,6 +11,21 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 				controller: 'AppController',
 				templateUrl: 'Pages/AboutMe/index.html'
 			})
+		.when('/Projects',
+			{
+				controller: 'AppController',
+				templateUrl: 'Pages/Projects/index.html'
+			})
+		.when('/History',
+			{
+				controller: 'AppController',
+				templateUrl: 'Pages/History/index.html'
+			})
+		.when('/Skills',
+			{
+				controller: 'AppController',
+				templateUrl: 'Pages/Skills/index.html'
+			})
 		.otherwise({redirectTo: '/'});
 });
 
