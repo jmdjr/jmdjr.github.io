@@ -6,69 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Welcome</title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/animate.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
 
     <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
- <!--   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.12/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.3.12/angular-animate.min.js"></script>
     <script src="https://code.angularjs.org/1.3.12/angular-route.min.js"></script>
--->
+	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+	<script src="javascripts/ui-bootstrap-tpls-0.12.0.min.js"></script>
     <script src="javascripts/jmdjrPortfolioApp.js"></script>
 </head>
-<body>
+<body ng-controller="AppController">
 <div class="site-wrapper">
 	<div class='site-wrapper-inner'>
 		<div class="cover-container">
-			<div class="masthead enclose">
-				<div class='inner'>
+			<div class="masthead">
+				<div class='inner enclose'>
 					<nav class="masthead-brand fork">
 						<a href="https://github.com/jmdjr">View On GitHub</a>
 					</nav>
+					<h3 class="folio-title" style="text-align: center"><a href="#/">Jmdjr Portfolio</a></h3>
+					<div class="clearfix"></div>
 					<nav class='masthead-nav nav'>			
 						<li><a>Skills</a></li>
 						<li><a>Work History</a></li>
 						<li><a>Projects</a></li>
-						<li><a>About Me</a></li>
+						<li><a href="#/AboutMe">About Me</a></li>
 					</nav>
 				</div>
 			</div>
     <!-- end header -->
-			
-				<h2>About Me</h2>
-			<ul class="nav nav-tabs" role="tablist">
-				<li role=presentation class="active"><a>School</a></li>
-				<li><a>Teams</a></li>
-				<li><a>Philosophy</a></li>
-			
-			</ul>
-<div>
-	<h3>School</h3>
-<p>I studied Software Engineering at the University of Washington and graduated in 2010.  I studied a variety of things to further my knowledge in the computing field, including Human Computer Interactions, Game Development and Design, and even Graphics rendering.  My studies even went as far as Quantum Computer technology, but only because it has always fascinated me. </p>
-<p>After school, I took up work at various places, Volt’s VMC (Xbox Live Testing) and Microsoft’s Xbox Certification and Multiplayer testing groups.  These places provided me with my first experiences in game development, by studying the various issues that are found in game software.  I even joined a couple groups of other game developers who wished to design something grand.</p>
-</div>
-				
 
-<div>
-	<h3>Teams</h3>
-<p>My first team was just me and two self-proclaimed writers.  When we attempted to develop a flash game called pixel ship 9000, many struggles were encountered and we ultimately disbanded.   Out of frustration for the amount of work I put into the game, I went ahead and published it to a well-known flash portal called Kongregate.  It is playable on this very site under “My Projects” section.</p>
+			<div ng-view></div>
 
-<p>My second team was full of artists and designers who needed a programmer to step in and develop something bigger.  I warned them about the size and that it was way too much to take on for a team as young as ours.  After several months of development, I succeeded in producing a demo level with some of the desired functionality.  Then internal struggles with finances, delegation of work and overall cooperation caused the team to abandon the project.   This is “JD Bacon: The Game” which is present under “My Projects” section.</p>
-<p>
-Several of the members quit, while the rest of us attempted a smaller concept game.  This too became abandoned due to the team’s struggle with personal finances.  We managed to get another alpha version of the game out, though it lacks a lot of functionality other than a simple example of the gameplay.  This project was the final project before the team decided we should all focus on balancing our lives first before spending free-time developing a game.  This project is titled “JD Bacon Jeweled” under “My Projects” section.</p>
-</div>
-
-<div class="AboutMeTab amBelief">
-	<h3>Game Belief</h3>
-<p>I believe games can do more than entertain, I believe they can educate and nurture knowledge better than any school lesson.  I want to make games that help instill knowledge while still remaining fun and engaging.  Though my skills are heavily programming, I can excel at bridging gaps in a game’s design, finding missing areas where the theme falls short.  I am great at coming up with novel and simple methods, which would be simple to implement thus should not increase time on development, to round out the game’s concept.</p>
-</div>
-			
-			
-			
-			
-	<!-- footer -->
+			<!-- footer -->
 			<div class="wrapper mastfoot">
 				<div class="inner">
 				<hr>

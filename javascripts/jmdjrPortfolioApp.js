@@ -1,11 +1,10 @@
-var jmdjrPortfolioApp = angular.module('jmdjrPortfolioApp',['ngRoute', 'ngAnimate']);
+var jmdjrPortfolioApp = angular.module('jmdjrPortfolioApp',['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 jmdjrPortfolioApp.config(function ($routeProvider){
-    $routeProvider
-        .when('/', 
+        $routeProvider.when('/', 
 			{
 				controller: 'AppController',
-				templateUrl: 'Pages/Navigation.html'
+				templateUrl: 'Pages/Home.html'
 			})
 		.when('/AboutMe',
 			{
@@ -17,19 +16,3 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 
 jmdjrPortfolioApp.controller('AppController', function($scope) {
 });
-
-//jmdjrPortfolioApp.controller('AboutMeController', function($scope) {
-//    
-//});
-//
-//jmdjrPortfolioApp.controller('ProjectsController', function($scope) {
-//    
-//});
-//
-//jmdjrPortfolioApp.controller('WorkHistoryController', function($scope) {
-//    
-//});
-//
-//jmdjrPortfolioApp.controller('SkillsController', function($scope) {
-//    
-//});
