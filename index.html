@@ -40,7 +40,9 @@
     <!-- end header -->
 
 			<div ng-view></div>
-
+			<div class='alert-zone'>
+				<alert class='animated {{alert.class}}' ng-repeat='alert in alerts' type='success'>{{alert.message}}</alert>
+			</div>
 			<!-- footer -->
 			<div class="mastfoot">
 				<div class="inner">
@@ -51,11 +53,6 @@
 		</div>
 	</div>
 </div>
-		
-		
-		
-		
-		
 		
 		
     <script type="text/javascript">
