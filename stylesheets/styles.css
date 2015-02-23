@@ -7,13 +7,17 @@
   -webkit-font-smoothing: antialiased;
 }
 
+html,
 body {
-  padding: 0px 0 20px 0px;
+  height: 100%;
+}
+
+body {
+  padding: 0px;
   margin: 0px;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #f0e7d5;
+  color: #fff;
   font-weight: normal;
-  background: #252525;
   background-attachment: fixed !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2a2a29), color-stop(100%, #1c1c1c));
   background: -webkit-linear-gradient(#2a2a29, #1c1c1c);
@@ -21,6 +25,8 @@ body {
   background: -o-linear-gradient(#2a2a29, #1c1c1c);
   background: -ms-linear-gradient(#2a2a29, #1c1c1c);
   background: linear-gradient(#2a2a29, #1c1c1c);
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 code {
@@ -99,16 +105,6 @@ a:hover {
 /*
  * Base structure
  */
-
-html,
-body {
-  height: 100%;
-}
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -281,16 +277,6 @@ body {
 
 }
 
-/*
-.frame.left {
-	border-right: solid 2px gray;
-}
-
-.frame.top {
-	border-bottom: solid 2px gray;
-}
-
-*/
 .no-padding {
 	padding: 0px;
 }
