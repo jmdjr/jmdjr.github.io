@@ -4,7 +4,7 @@ jmdjrPortfolioApp.config(function ($routeProvider){
         $routeProvider.when('/', 
 			{
 				controller: 'AppController',
-				templateUrl: 'Pages/Home.html',
+				templateUrl: 'Pages/Home/index.html',
 			})
 		.when('/AboutMe',
 			{
@@ -29,35 +29,37 @@ jmdjrPortfolioApp.config(function ($routeProvider){
 		.otherwise({redirectTo: '/'});
 });
 
-jmdjrPortfolioApp.controller('AppController', function($scope, $timeout) {
+jmdjrPortfolioApp.controller('AppController', function($scope, $location) {
 	$scope.alerts = [];
 	$scope.awards = 0;
 	
 	$scope.newAlert = function(awardName) {
-		var index = $scope.alerts.push({type: 'success', message: awardName, class:'fadeIn'});
-		setTimeout(function(){
-			$scope.alerts[index - 1].class = 'fadeOut';
-			$scope.closeAlert(0, 1000);
-		}, 1000);
+		var index = $scope.alerts.push({type: 'success', message: awardName});
 	}
 	
-	$scope.closeAlert = function(index, timeout) {
-		
-		$timeout(function() {		
-			$scope.alerts.splice(index, 1);
-		}, timeout);
+	$scope.closeAlert = function(index) {
+		$scope.alerts.splice(index, 1);
 	}
-	$scope.newAlert('test 1');
 	
-	setTimeout(function(){
-		$scope.newAlert('test 2');
+	$scope.InitHome = function(){
 		
-		setTimeout(function(){
-			$scope.newAlert('test 3');
-		}, 1000);
-		
-	}, 1000);
+	}
 	
+	$scope.InitSkills = function(){
+	
+	}
+	
+	$scope.InitHistory = function(){
+	
+	}
+	
+	$scope.InitProjects = function(){
+		
+	}
+	
+	$scope.InitAbout = function(){
+		
+	}
 	
 });
 //awards are given when users visit various places on the site.

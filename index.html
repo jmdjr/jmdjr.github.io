@@ -38,10 +38,12 @@
 				</div>
 			</div>
     <!-- end header -->
-
+			<div class='hidden awards'>
+				<button ng-click="newAlert('History')"></button>
+			</div>
 			<div ng-view></div>
 			<div class='alert-zone'>
-				<alert class='animated {{alert.class}}' ng-repeat='alert in alerts' type='success'>{{alert.message}}</alert>
+				<alert ng-repeat='alert in alerts' type='success' close="closeAlert($index)">{{alert.message}}</alert>
 			</div>
 			<!-- footer -->
 			<div class="mastfoot">
