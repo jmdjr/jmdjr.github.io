@@ -1,8 +1,12 @@
 <div ng-init="InitProjects()" class="projects jmd-view">
 	<h1>Projects</h1>
-<embed width="250" height="250" style="border: solid 2px black;" src="http://chat.kongregate.com/gamez/0012/6336/live/PixelShip9000.swf">
+	<div class='col-sm-5 col-xs-12' style='float: left;' ng-click='enablePixelShipGame()' ng-repeat='t in PixelShipGame' encode-html="t.html"></div>
+<div class='col-sm-7 col-xs-12'>
 	<p>If the either your computer doesn't allow flash to work, or
 	kongregate didn't like me running my game from their server. either way, you
 	can access this game from the following url.
 	<a href=http://www.kongregate.com/games/PixelTory/pixelship9000>PixelShip on Kongregate.com</a></p>
+	</div>
+	<div class="clearfix"></div>
+	
 </div>
