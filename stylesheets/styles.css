@@ -13,8 +13,6 @@ body {
 }
 
 body {
-  padding: 0px;
-  margin: 0px 0px 20px 0px;
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-weight: normal;
@@ -193,6 +191,7 @@ a:hover {
 .mastfoot {
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+	margin: 0px 0px 20px 0px;
 }
 
 
