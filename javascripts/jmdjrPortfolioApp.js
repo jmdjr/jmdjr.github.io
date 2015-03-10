@@ -47,11 +47,31 @@ jmdjrPortfolioApp.controller('AppController', function($scope, $location) {
 	}
 	
 	$scope.InitHome = function(){
-		
+		 
 	}
 	
 	$scope.InitSkills = function(){
-	
+		$scope.languageImages = [ '/images/logos/Languages/javascript.png'
+								 , '/images/logos/Languages/css3.png'
+								 , '/images/logos/Languages/html5.png'
+								 , '/images/logos/Languages/csharp.png'
+								 , '/images/logos/Languages/Java.png'
+								 , '/images/logos/Languages/Ruby.png'
+								 , '/images/logos/Languages/c++.png'
+								 , '/images/logos/Languages/Lua.png'];
+		
+		$scope.IDEImages = [ '/images/logos/IDEs/flash.png'
+						    , '/images/logos/IDEs/programmer-notepad.png'
+						    , '/images/logos/IDEs/brackets.png'
+						    , '/images/logos/IDEs/vs2013.png'
+						    , '/images/logos/IDEs/eclipse.png'
+						   ];
+		
+		$scope.EngineImages = [ '/images/logos/Game Engines/unity.png'
+							   , '/images/logos/Game Engines/phaserio.png'
+							   , '/images/logos/Game Engines/flixel.png'
+							   , '/images/logos/Game Engines/xna.png'
+							  ];
 	}
 	
 	$scope.InitHistory = function(){

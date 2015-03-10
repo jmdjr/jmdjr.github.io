@@ -1,12 +1,20 @@
-<div ng-init="InitSkills()">
+<div ng-init="InitSkills()" class='col-sm-12'>
 	<h3>Languages and Skills</h3>
 	<p>Throughout the years I have aquired experience programming in a number of languages.</p>
-	<div class='languages'></div>
-	
+	<div class='keep-small languages'>
+	<img ng-repeat='l in languageImages' src='{{l}}' class='col-xs-4'/>
+	</div>
+	<div class='clearfix'></div>
 	<p>I have also developed in a number of different IDEs</p>
-	<div class='ides'></div>
+	<div class='keep-small ides'>
+	<img ng-repeat='l in IDEImages' src='{{l}}' class='col-xs-4'/>
+	</div>
+	<div class='clearfix'></div>
 	<p>I have also worked with many different engines</p>
-	<div class='engines'></div>
+	<div class='keep-small engines'>
+	<img ng-repeat='l in EngineImages' src='{{l}}' class='col-xs-4'/>
+	</div>
+	<div class='clearfix'></div>
 <!--
 	<tabset>
 		<tab heading="C++">

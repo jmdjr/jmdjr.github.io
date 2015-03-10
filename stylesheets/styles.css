@@ -162,14 +162,6 @@ a:hover {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-}
 
 /*
  * Cover
@@ -189,18 +181,31 @@ a:hover {
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-	margin: 0px 0px 20px 0px;
+  	color: #999; /* IE8 proofing */
+ 	color: rgba(255,255,255, .5);
+	margin: 0px 0px 0px 0px;
+	background-color: #1c1c1c;
 }
 
 
+	.keep-small {
+		overflow: hidden;
+		position: relative;	
+		width: 85%;
+		margin: 0px auto;
+	}
 /*
  * Affix and center
  */
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
   .masthead {
     top: 0;
   }
@@ -218,6 +223,12 @@ a:hover {
 	.cover-container{
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+	.keep-small {
+		overflow: hidden;
+		position: relative;	
+		width: 65%;
+		margin: 0px auto;
+	}
 }
 
 @media (min-width: 992px) {
@@ -226,6 +237,10 @@ a:hover {
   .cover-container {
     width: 700px;
   }
+}
+.languages {
+	overflow: hidden;
+	position: relative;
 }
 
 .enclose{
@@ -274,6 +289,9 @@ a:hover {
 .frame-cell:hover, .frame-cell:active {
 	background-color: #000000;
 
+}
+.ng-scope {
+	
 }
 
 .no-padding {
