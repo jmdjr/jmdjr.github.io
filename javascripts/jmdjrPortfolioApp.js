@@ -57,8 +57,8 @@ jmdjrPortfolioApp.controller('AppController', function($scope, $location) {
 								 , '/images/logos/Languages/csharp.png'
 								 , '/images/logos/Languages/Java.png'
 								 , '/images/logos/Languages/Ruby.png'
-								 , '/images/logos/Languages/c++.png'
-								 , '/images/logos/Languages/Lua.png'];
+								 , '/images/logos/Languages/C++.png'
+								 , '/images/logos/Languages/lua.png'];
 		
 		$scope.IDEImages = [ '/images/logos/IDEs/flash.png'
 						    , '/images/logos/IDEs/programmer-notepad.png'
