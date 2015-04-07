@@ -75,6 +75,32 @@ jmdjrPortfolioApp.controller('AppController', function($scope, $location) {
 	}
 	
 	$scope.InitHistory = function(){
+		$scope.JobHistory = [
+			{
+				company: {
+					name: "Tulalip Data Services",
+					description: "A Software Development department working for the Tulalip Indian Tribes of washington State.",
+					logo: "/images/Work History/TulalipTribes.png"
+				},
+				
+				position: {
+					title: "Software Developer I",
+					description: "Developing tools, both web-based and desktop, for the Tulalip Indian Tribal Government. Tools include customized Content Management and Event Management Systems. Developed html 5 code to play videos and audio in pages.  Completed preview course on Html 5 and CSS 3."
+				}
+			},
+			{
+				company: {
+					name: "Microsoft Game Studios",
+					description: "Microsoft Studios is the video game production wing for Microsoft, responsible for the development and publishing of games for the Xbox, Xbox 360, Xbox One, Games for Windows, Steam, Windows Store, and Windows Phone platforms.",
+					logo: "/images/Work History/Microsoft_Game_Studios_logo.png"
+				},
+				
+				position: {
+					title: "Application Dev & Test-CS - Test Associate 2",
+					description: "Developed several internal browser based management tools for the Shield Teams.  Wrote test cases to test functionality of said tools.  Spent majority of contract developing tools for the Multiplayer team."
+				}
+			}
+		];
 	
 	}
 	

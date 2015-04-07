@@ -328,8 +328,8 @@ a:hover {
 	position: fixed;
 	bottom: 20px;
 	right: 10px;
-	
 }
+
 .alert-dismissable .close {
 	right: 20px;
 	top: 0px;
@@ -353,4 +353,24 @@ a:hover {
 	text-align: center;
 	border: solid 1px black;
 	cursor: pointer;
+}
+
+/*************************************************************/
+/*            History                                        */
+.job-wrapper {
+	overflow: hidden;
+	text-align:left;
+}
+
+.company-name, .position-title {
+	font-size: 12pt;
+	font-weight:bold;
+}
+
+.company-logo {
+	min-width:160px;
+}
+
+.position-title {
+	margin-top: 10px;
 }
