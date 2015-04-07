@@ -41,7 +41,7 @@
 			<div class='hidden awards'>
 				<button ng-click="newAlert('History')"></button>
 			</div>
-			<div ng-view></div>
+			<div ng-view class="full-view"></div>
 			<div class='alert-zone'>
 				<alert ng-repeat='alert in alerts' type='success' close="closeAlert($index)">{{alert.message}}</alert>
 			</div>
@@ -49,7 +49,9 @@
 			<div class="mastfoot">
 				<div class="inner">
 				<hr>
-				<span class="credits left">Site designed by <a href="https://github.com/jmdjr">jmdjr</a></span>
+				<div class="credits">Site designed by <a href="https://github.com/jmdjr">jmdjr</a></div>
+					<span class="credits">Hosted on GitHub Pages &mdash; Original Theme by <a href="https://twitter.com/michigangraham">mattgraham</a>
+	<p>I can be reached <a href="mailto:jmdcodejunkie@gmail.com">via email</a> and will respond as soon as possible.</p></span>
 				</div>
 			</div>
 		</div>

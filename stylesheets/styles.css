@@ -27,20 +27,6 @@ body {
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
-code {
-  font-family: "Lucida Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
-  color: #efefef;
-  font-size: 13px;
-  margin: 0 4px;
-  padding: 4px 6px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -o-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -khtml-border-radius: 2px;
-  border-radius: 2px;
-}
-
 hr {
   border: 0;
   outline: none;
@@ -181,10 +167,12 @@ a:hover {
  */
 
 .mastfoot {
-  	color: #999; /* IE8 proofing */
  	color: rgba(255,255,255, .5);
 	margin: 0px 0px 0px 0px;
 	background-color: #1c1c1c;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
 }
 
 
@@ -354,7 +342,43 @@ a:hover {
 	border: solid 1px black;
 	cursor: pointer;
 }
+.game-wrapper {
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+	
+}
+.game-preview {
+	overflow:hidden;
+	position:relative;
+	height: 100%;
+}
 
+.download {
+	display: block;
+	padding: 10px;
+	background-color: dimgray;
+	border: 2px outset darkgray;
+	border-radius: 20px;
+	margin: 50px auto;
+	height: 50px;
+	width: 100px;
+	text-decoration: none;
+}
+
+.download:active {
+	text-decoration: none;
+	border-style:inset;
+}
+.download:visited, .download:focus, .download:hover {
+	text-decoration: none;
+}
+
+
+.full-view {
+	overflow:hidden;
+	margin-bottom: 100px;
+}
 /*************************************************************/
 /*            History                                        */
 .job-wrapper {
