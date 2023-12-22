@@ -1,6 +1,6 @@
 * {
-  display:block;
-  position:relative;
+  display: block;
+  position: relative;
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -8,16 +8,27 @@ a {
   display: inline;
 }
 
-.section,
+.app-background {
+  background-image: url("../assets/hatch.png");
+  background-repeat: repeat;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section,
 .header {
-  min-height: 100px;
-  color:white;
-  padding: 30px;
+  color: white;
   text-align: center;
   font-size: 16pt;
-  display:flex;
-  flex: 1 1 100%;
+  display: flex;
+  flex: 1 1 50%;
   justify-content: center;
+}
+
+.content {
+  padding: 30px;
 }
 
 .header {
@@ -26,8 +37,11 @@ a {
   font-family: Goblin One, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.central-text {
-  max-width: 600px;
+.back-blend {
+  mix-blend-mode: color-dodge;
+  height:100%;
+  width:100%;
+  position:absolute;
 }
 
 .color-row-0 {
@@ -36,21 +50,26 @@ a {
 }
 
 .color-row-1 {
-  background-color: hsv(0, 0, 0.1);
+  background-image: linear-gradient(hsv(0, 0, 0.0), hsv(0, 0, 0.1), hsv(0, 0, 0.1));
 }
 
 .color-row-2 {
-  background-color: hsv(0, 0, 0.2);
+  background-image: linear-gradient(hsv(0, 0, 0.1), hsv(0, 0, 0.2), hsv(0, 0, 0.2));
 }
 
 .color-row-3 {
-  background-color: hsv(0, 0, 0.3);
+  background-image: linear-gradient(hsv(0, 0, 0.2), hsv(0, 0, 0.3), hsv(0, 0, 0.3));
 }
 
 .color-row-4 {
-  background-color: hsv(0, 0, 0.4);
+  background-image: linear-gradient(hsv(0, 0, 0.3), hsv(0, 0, 0.4), hsv(0, 0, 0.4));
 }
 
-.color-row-5 {
-  background-color: hsv(0, 0, 0.5);
+.footer {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  max-height:100px;
+  background-color: hsv(0, 0, 0.4);
 }

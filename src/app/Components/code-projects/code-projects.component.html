@@ -1,1 +1,19 @@
-<p>code-projects works!</p>
+<div class="central-text">
+  I had several releases under <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. but have since seperated and am no longer under their company.
+  In the future I will be attempting to release solo projects from now on.
+</div>
+<div class="projects-slider" *ngIf="MyProjects.length">
+  <keen-carousel id='carousel' [plugins]="usePlugins"
+    [items]="MyProjects" setPerspective="2500px" [stackWidthFactor]="0.25"
+    >
+    <div *CarouselItem="let item" class="card">
+      <h1 *ngIf="item.name">
+        {{item.name}}
+      </h1>
+      <img *ngIf="item.image" [src]="item.image" class="card-image">
+      <div class="card-description" *ngIf="item.description">
+        {{item.description}}
+      </div>
+    </div>
+  </keen-carousel>
+</div>

@@ -1,1 +1,23 @@
 
+.projects-slider {
+  margin-top: 30px;
+  height: 350px;
+}
+.card {
+  border-radius: 10px;
+  border: solid white 1px;
+  background-color: black;
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  display:flex;
+  align-items:start;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  border: solid white 1px;
+  border-radius: 5px;
+}

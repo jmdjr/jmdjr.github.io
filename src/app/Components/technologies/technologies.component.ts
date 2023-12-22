@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./technologies.component.less']
 })
 export class TechnologiesComponent {
-
+  techList:any[] = [];
 }
+
