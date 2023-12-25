@@ -17,6 +17,16 @@ export class CodeProjectsComponent {
       name: "Projects",
       description: "Comming Soon...",
       image: "../../../assets/Placeholder.png"
+    },
+    {
+      name: "Projects",
+      description: "Comming Soon...",
+      image: "../../../assets/Placeholder.png"
+    },
+    {
+      name: "Projects",
+      description: "Comming Soon...",
+      image: "../../../assets/Placeholder.png"
     }
   ];
 
