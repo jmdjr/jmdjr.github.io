@@ -1,9 +1,9 @@
 name: Angular CI
 on:
   push:
-    branches: [ main ]
+    branches: [ new_custom ]
   pull_request:
-    branches: [ main ]
+    branches: [ new_custom ]
   workflow_dispatch:
 jobs:
   build:
@@ -23,5 +23,5 @@ jobs:
       - name: npm install and npm run CI commands
         run: |
           npm i
-          npm run test:ci
-          npm run build:ci
+          npm run test
+          npm run build
