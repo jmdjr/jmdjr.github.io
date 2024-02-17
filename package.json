@@ -6,7 +6,9 @@
     "start": "nx serve",
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
-    "test": "nx test"
+    "test": "nx test",
+    "build:prod": "ng build --configuration production --base-href https://rodrigokamada.github.io/angular-github-actions/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
