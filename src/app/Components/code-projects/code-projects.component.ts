@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CodeProject } from '../../Models/CodeProject.data';
 import { KeenCarouselComponent } from '../../Support/_carousels/keen-carousel/keen-carousel.component';
+import { PROJECTS } from '../../../assets/site.data';
 
 @Component({
   selector: 'app-code-projects',
@@ -12,13 +13,7 @@ export class CodeProjectsComponent {
     "stackCard"
   ];
 
-  MyProjects: CodeProject[] = [
-    {
-      name: "Projects",
-      description: "Comming Soon...",
-      image: "../../../assets/Placeholder.png"
-    }
-  ];
+  MyProjects = PROJECTS;
 
   /*MyProjects: CodeProject[] = [
     {

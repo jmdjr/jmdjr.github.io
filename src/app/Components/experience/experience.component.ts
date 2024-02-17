@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { COMPANY_WORKS } from '../../../assets/site.data';
 
 @Component({
   selector: 'app-experience',
@@ -6,15 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./experience.component.less']
 })
 export class ExperienceComponent {
-  companies: any[] = [
-    {
-      logoURL: "../../../assets/company_logos/Microsoft.png"
-    },
-    {
-      logoURL: "../../../assets/company_logos/CapitalOne.png"
-    },
-    {
-      logoURL: "../../../assets/company_logos/Tulalip-Tribes-Logo.svg"
-    }
-  ];
+  get companies() { return COMPANY_WORKS; }
 }

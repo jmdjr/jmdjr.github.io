@@ -8,3 +8,7 @@ export interface CodeProject {
     URL?: string;
   }[];
 }
+
+export interface CompanyWork {
+  logoURL: string;
+}
