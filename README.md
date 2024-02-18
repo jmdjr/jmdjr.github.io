@@ -1,3 +1,4 @@
+[![page-deploy](https://github.com/jmdjr/jmdjr.github.io/actions/workflows/page-deploy.yml/badge.svg)](https://github.com/jmdjr/jmdjr.github.io/actions/workflows/page-deploy.yml)
 # JmdjrGithubIo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
