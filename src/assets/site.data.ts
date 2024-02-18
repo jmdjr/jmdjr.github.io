@@ -3,8 +3,11 @@ export const HEADING =
 `John Davis Jr
 <br />Software Engineer`;
 
+export const SUBTITLE_LIST=[
+  "Game Designer"
+]
+
 export const DESCRIPTION =
- 
 `My name is John Davis Jr. I'm a sofware engineer, a Game Designer, a Father, a husband, a brother and a son.
   While trying to do game design professionally, I am living through one of the easiest and roughest times for game
   developers.With a plethora of tools that facilitate designing, developing, and deploying a game idea to market
