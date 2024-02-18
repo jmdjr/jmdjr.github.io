@@ -12,7 +12,7 @@
     }
   },
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "namedInputs": {
     "sharedGlobals": [],
