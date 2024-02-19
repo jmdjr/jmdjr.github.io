@@ -26,10 +26,6 @@ jobs:
     - name: Build
       run: npm run build:prod
 
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       if: success()
       uses: actions/deploy-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: dist/
-        enable_jekyll: true
