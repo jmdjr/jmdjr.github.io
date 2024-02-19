@@ -27,6 +27,9 @@ export const COMPANY_WORKS: CompanyWork[] = [
   }
 ]
 
+export const PROJECTS_TOPTEXT = `I previously lead development for several games with <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. 
+but have since seperated and am no longer with them. My current plan is to release games as a solo developer.`
+
 export const PROJECTS: CodeProject[] = [
   {
     name: "Projects",
