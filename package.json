@@ -7,7 +7,7 @@
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
-    "build:prod": "nx build --configuration=production --base-href=https://jmdjr.github.io/",
+    "build:prod": "nx build --configuration=production --base-href=https://jmdjr.github.io/jmdjr.github.io/",
     "test:headless": "nx test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
