@@ -31,10 +31,10 @@ jobs:
   second-pass:
     runs-on: ubuntu-latest
     needs: first-pass
-      permissions:
-        Contents: read
-        Metadata: read
-        Pages: write
+    permissions:
+      Contents: read
+      Metadata: read
+      Pages: write
     steps:
     - name: Checkout
       uses: actions/checkout@v4
