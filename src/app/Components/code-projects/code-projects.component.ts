@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { CodeProject } from '../../Models/CodeProject.data';
 import { KeenCarouselComponent } from '../../Support/_carousels/keen-carousel/keen-carousel.component';
-import { PROJECTS } from '../../../assets/site.data';
+import { PROJECTS, PROJECTS_TOPTEXT } from '../../../assets/site.data';
 
 @Component({
   selector: 'app-code-projects',
@@ -13,18 +13,6 @@ export class CodeProjectsComponent {
     "stackCard"
   ];
 
-  MyProjects = PROJECTS;
-
-  /*MyProjects: CodeProject[] = [
-    {
-      name: 'Hexaduko',
-      description: 'My first solo game I try for profit!',
-      links: [
-        {
-          text: 'Github',
-          URL: 'https://github.com/jmdjr/Hexaduko'
-        }
-      ]
-    }
-  ];*/
+  get TopText() { return PROJECTS_TOPTEXT; }
+  get MyProjects() {return PROJECTS; }
 }

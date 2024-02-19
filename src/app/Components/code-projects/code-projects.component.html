@@ -1,6 +1,4 @@
-<div class="central-text">
-  I had several releases under <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. but have since seperated and am no longer under their company.
-  In the future I will be releasing solo projects.
+<div class="central-text" [innerHTML]="TopText">
 </div>
 <div class="projects-slider" *ngIf="MyProjects.length">
   <keen-carousel id='carousel' [plugins]="usePlugins"
