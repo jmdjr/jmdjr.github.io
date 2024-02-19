@@ -1,7 +1,7 @@
 import { CodeProject, CompanyWork } from "../app/Models/CodeProject.data";
 export const HEADING = 
 `John Davis Jr
-<br />Software Engineer`;
+<br />Full Stack Software Developer`;
 
 export const SUBTITLE_LIST=[
   "Game Designer"
