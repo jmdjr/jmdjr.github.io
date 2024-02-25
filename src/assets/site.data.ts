@@ -7,12 +7,12 @@ export const SUBTITLE_LIST=[
   "Game Designer"
 ]
 
+export const PROJECTS_TOPTEXT = `Previously lead development for several games with <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. 
+Now working day jobs while trying to devlop my own style.`
+
 export const DESCRIPTION =
-`My name is John Davis Jr. I'm a sofware engineer, a Game Designer, a Father, a husband, a brother and a son.
-  While trying to do game design professionally, I am living through one of the easiest and roughest times for game
-  developers.With a plethora of tools that facilitate designing, developing, and deploying a game idea to market
-  fast and a glut of industry giants dumping thousands of experienced industry professionals into the market,
-  I am just one of many who have been trying to make their mark.
+`My name is John Davis Jr. I'm a Full-Stack Developer, a Sofware Engineer, a Game Developer, a Father, a husband, a brother and a son.
+  While trying to do game design professionally, I work a day job. I am just one of many software engineers who have been trying to make their mark developing video games.
   <br /> I work by day, sustaining my family, and by night I work on my next idea.`;
 
 export const COMPANY_WORKS: CompanyWork[] = [
@@ -26,9 +26,6 @@ export const COMPANY_WORKS: CompanyWork[] = [
     logoURL: "../../../assets/company_logos/Tulalip-Tribes-Logo.svg"
   }
 ]
-
-export const PROJECTS_TOPTEXT = `I previously lead development for several games with <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. 
-but have since seperated and am no longer with them. My current plan is to release games as a solo developer.`
 
 export const PROJECTS: CodeProject[] = [
   {
