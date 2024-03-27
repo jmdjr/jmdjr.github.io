@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EXPERIENCE } from '../../../assets/site.data';
 
 @Component({
   selector: 'app-technologies',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./technologies.component.less']
 })
 export class TechnologiesComponent {
+  get experience() { return EXPERIENCE; }
   techList:any[] = [];
 }
 
