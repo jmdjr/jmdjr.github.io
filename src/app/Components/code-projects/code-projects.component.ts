@@ -13,6 +13,9 @@ export class CodeProjectsComponent {
     "stackCard"
   ];
 
+  perspective:number = 15000;
+
+  get perspectiveAmount() { return this.perspective + 'px'; }
   get TopText() { return PROJECTS_TOPTEXT; }
   get MyProjects() {return PROJECTS; }
 }
