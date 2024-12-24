@@ -7,13 +7,13 @@ export const SUBTITLE_LIST = [
   "Game Designer"
 ]
 
-export const PROJECTS_TOPTEXT = `Previously lead development for several games with <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. 
+export const PROJECTS_TOPTEXT = `Previously lead developer for several games with <a href="https://www.lostseraph.com/" target="_blank">Lost Seraph, LLC</a>. 
 Now working day jobs while trying to develop my own development style.`
 
 export const DESCRIPTION =
-  `My name is John Davis Jr. I'm a Full-Stack Developer, a Software Engineer, a Game Developer, a Father, a husband, a brother and a son.
-  While trying to do game design professionally, I work a day job. I am just one of many software engineers who have been trying to make their mark developing video games.
-  <br /> I work by day, sustaining my family, and by night I work on my next idea.`;
+  `My name is John Davis Jr. I'm a Full-Stack Developer, a Software Engineer, a Game Developer, a Father, a husband, a brother, and a son.
+  I am just one of many software engineers who have been trying to make their mark developing video games, and video game adjacent software.
+  <br /> I work by day, sustaining my family, and by night I work on my next ideas.`;
 
 export const COMPANY_WORKS: CompanyWork[] = [
   {
