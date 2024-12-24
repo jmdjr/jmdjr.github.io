@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/architect": "^0.1900.6",
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
     "@angular/compiler": "^16.2.0",
@@ -20,7 +21,6 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
-    "angular-cli-ghpages": "^1.0.7",
     "keen-slider": "^6.8.6",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
