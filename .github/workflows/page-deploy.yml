@@ -43,7 +43,7 @@ jobs:
         repository: jmdjr/jmdjr.github.io
         token: ${{ secrets.GITHUB_TOKEN }}
     - name: build
-      uses: actions/jekyll-build-pages@v1    
+      uses: actions/jekyll-build-pages@v1.0.13
       with: 
         source: dist/
         destination: ./_site
