@@ -29,9 +29,15 @@ export const COMPANY_WORKS: CompanyWork[] = [
 
 export const PROJECTS: CodeProject[] = [
   {
-    name: "Projects",
-    description: "Adapting to market...",
-    image: "../../../assets/Projects_temp.png"
+    name: `Chat AI`,
+    description: `Try your personally hosted AIs here, this page makes a connection to the ip address you provide, 
+    and attempts to chat with it as if its an AI!`,
+    links: [
+      {
+        text:'Personal AI Chat',
+        URL: 'https://jmdjr.github.io/personal-AI/'
+      }
+    ]
   },
   {
     name: "Personal",

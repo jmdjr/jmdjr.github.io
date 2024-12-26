@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { CodeProject } from '../../Models/CodeProject.data';
-import { KeenCarouselComponent } from '../../Support/_carousels/keen-carousel/keen-carousel.component';
 import { PROJECTS, PROJECTS_TOPTEXT } from '../../../assets/site.data';
 
 @Component({

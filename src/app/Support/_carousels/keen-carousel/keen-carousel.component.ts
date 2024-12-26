@@ -31,14 +31,13 @@ export class KeenCarouselComponent implements AfterViewInit, OnInit {
   private Current_Item: any;
   get perspective() : string {return `perspective:${this.setPerspective ?? "500px"}`; }
 
-  private PluginsMap: Map<string, KeenPlugin>;
-  ngOnInit(): void {
-    this.PluginsMap = new Map<string, KeenPlugin>(
+  private PluginsMap = new Map<string, KeenPlugin>(
     [
-      [ "stackCard", stackCard(this.stackWidthFactor ?? 1) ]
-    , [ "polygon3D", polygon3D ]
-    ]
-    )
+      ["stackCard", stackCard(this.stackWidthFactor ?? 1)]
+      , ["polygon3D", polygon3D]
+    ]);
+
+  ngOnInit(): void {
     this.OnShareComponent?.emit(this);
   }
 
