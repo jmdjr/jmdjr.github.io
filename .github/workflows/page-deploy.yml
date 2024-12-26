@@ -45,7 +45,7 @@ jobs:
     - name: build
       uses: actions/jekyll-build-pages@v1    
       with: 
-        source: .
+        source: dist/
         destination: ./_site
     - name: package
       uses: actions/upload-pages-artifact@v3

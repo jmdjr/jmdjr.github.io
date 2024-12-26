@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "outDir": "./_site",
     "strictPropertyInitialization": false,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true,
