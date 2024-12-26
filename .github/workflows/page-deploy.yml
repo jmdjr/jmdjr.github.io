@@ -16,11 +16,11 @@ jobs:
       with:
         node-version: '18'
     - name: Install dependencies
-      run: npm install
+      run: cd Shutdown/jmdjr.github.io && npm install
     # - name: Run tests
     #   run: cd Shutdown/jmdjr.github.io && npm run test:headless
     - name: Build
-      run: npm run build
+      run: cd Shutdown/jmdjr.github.io && npm run build
     - name: Deploy
       if: success()
       uses: peaceiris/actions-gh-pages@v3
