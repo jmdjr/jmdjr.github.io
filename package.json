@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nx serve",
-    "build": "nx build",
-    "watch": "nx build --watch --configuration development",
-    "test": "nx test",
-    "build:prod": "nx build --configuration=production --base-href=https://jmdjr.github.io/",
-    "test:headless": "nx test --watch=false --browsers=ChromeHeadless"
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "build:prod": "ng build --configuration=production --base-href=https://jmdjr.github.io/",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
