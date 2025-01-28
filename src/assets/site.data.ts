@@ -40,15 +40,25 @@ export const PROJECTS: CodeProject[] = [
     ]
   },
   {
-    name: "Personal",
-    description: "working hard, playing hard...",
-    image: "../../../assets/Personal_Temp.png"
+    name: `Fun With Javascript`,
+    description: `Small Javascript/Jquery based projects I made to have fun and show off.`,
+    links: [
+      {
+        text: 'Fun with Javascript',
+        URL: 'https://jmdjr.github.io/FunWithJavascript/'
+      }
+    ]
   },
   {
-    name: "Growth",
-    description: "Always learning...",
-    image: "../../../assets/Growth_Temp.png"
-  }
+    name: `Number Block Game`,
+    description: `A concept I am planning, based off the children's YT videos and using the `,
+    links: [
+      {
+        text: 'Number Blocks Game',
+        URL: 'https://jmdjr.github.io/number-blocks/'
+      }
+    ]
+  },
 ]
 
 export const EXPERIENCE: string = `I have over 10+ years of Software Engineering Experience, using various tools and technologies. Some examples

@@ -28,6 +28,7 @@
 
 .carousel__cell {
   width: 75%;
+  pointer-events: none;
   position: absolute;
   display: flex;
   justify-content: center;
