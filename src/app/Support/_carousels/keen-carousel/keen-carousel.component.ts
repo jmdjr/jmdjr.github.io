@@ -1,15 +1,17 @@
-import { AfterViewInit, ChangeDetectorRef, Component, ContentChild, ElementRef, EventEmitter, Input, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ContentChild, CUSTOM_ELEMENTS_SCHEMA, ElementRef, EventEmitter, Input, OnInit, Output, TemplateRef, ViewChild } from '@angular/core';
 import KeenSlider, { KeenSliderInstance, KeenSliderPlugin } from 'keen-slider';
 import { autoSwitcher } from './plugins/auto-switcher';
 import { CarouselItemDirective } from '../carousel-item-directive/carousel-item.directive';
 import { polygon3D } from './plugins/polygon3D';
 import { stackCard } from './plugins/stackCard';
 import { KeenPlugin } from './plugins/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'keen-carousel',
   templateUrl: './keen-carousel.component.html',
-  styleUrls: ['./keen-carousel.component.css']
+  styleUrls: ['./keen-carousel.component.css'],
+  imports: [CommonModule]
 })
 export class KeenCarouselComponent implements AfterViewInit, OnInit {
   @ViewChild("sliderRef") sliderRef: ElementRef<HTMLElement>;

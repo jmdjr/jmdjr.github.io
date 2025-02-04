@@ -1,23 +1,25 @@
-import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from './Base/header/header.component';
-import { FooterComponent } from './Base/footer/footer.component';
+import { Component } from '@angular/core';
+import { AppTemplateBaseComponent, ComponentModule } from 'personal-site-template/src/app/app.component';
+import { CodeProjectsComponent } from './Components/code-projects/code-projects.component';
+import { DescriptionComponent } from './Components/description/description.component';
+import { TechnologiesComponent } from './Components/technologies/technologies.component';
+import { HeaderService } from 'personal-site-template/src/app/services/header.service';
+import { HEADING } from '../assets/site.data';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less'],
-  imports: [HeaderComponent, FooterComponent]
+  imports: [AppTemplateBaseComponent]
 })
-export class AppComponent implements OnInit {
-  ngOnInit(): void {
-    this._row = 0;
-  }
-  _row:number = 0;
-  get startRow() : number {
-    this._row = 0;
-    return this._row;
-  }
-  get row(): number {
-    return ++this._row;
+export class AppComponent {
+  modules: ComponentModule[] = [
+    new ComponentModule(CodeProjectsComponent),
+    new ComponentModule(DescriptionComponent),
+    new ComponentModule(TechnologiesComponent)
+  ]
+
+  constructor(private header: HeaderService) {
+    this.header.heading = HEADING;
   }
 }

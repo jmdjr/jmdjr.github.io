@@ -1,6 +1,10 @@
-import { Directive, TemplateRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Directive, Input, TemplateRef } from '@angular/core';
 
 @Directive({
-  selector: '[CarouselItem]'
+  selector: '[CarouselItem]',
 })
-export class CarouselItemDirective { }
+export class CarouselItemDirective {
+  constructor(private templateRef: TemplateRef<any>) {
+  }
+}

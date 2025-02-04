@@ -1,0 +1,3 @@
+[submodule "personal-site-template"]
+	path = personal-site-template
+	url = git@github.com:jmdjr/personal-site-template.git

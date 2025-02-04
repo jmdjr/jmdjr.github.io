@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CodeProjectsComponent } from './code-projects.component';
-import { KeenCarouselModule } from '../../Support/_carousels/keen_carousel.module';
 
 describe('CodeProjectsComponent', () => {
   let component: CodeProjectsComponent;
@@ -8,8 +7,7 @@ describe('CodeProjectsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CodeProjectsComponent],
-      imports: [KeenCarouselModule]
+      declarations: [ CodeProjectsComponent]
     })
     .compileComponents();
 
