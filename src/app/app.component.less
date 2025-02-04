@@ -14,7 +14,7 @@ a {
   position: relative;
   display:flex;
   flex-direction: column;
-
+  flex: 1 1 100%;
 }
 
 section,
@@ -23,7 +23,7 @@ section,
   text-align: center;
   font-size: 16pt;
   display: flex;
-  flex: 1 1 50%;
+  flex: 1 1 100%;
   justify-content: center;
 }
 
@@ -35,6 +35,7 @@ section,
   color: gray;
   font-size: 48pt;
   font-family: Goblin One, Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  max-height: fit-content;
 }
 
 .back-blend {
@@ -48,6 +49,11 @@ section,
   color: gray;
   background-color: hsv(0, 0, 0.0);
 }
+
+@sections: 5;
+@counter: 1;
+@hsv-min: 0.0;
+@hsv-max: 0.4;
 
 .color-row-1 {
   background-image: linear-gradient(hsv(0, 0, 0.0), hsv(0, 0, 0.1), hsv(0, 0, 0.1));

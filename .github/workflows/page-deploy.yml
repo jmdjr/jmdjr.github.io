@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: npm install
     # - name: Run tests
-    #   run: cd Shutdown/jmdjr.github.io && npm run test:headless
+    #   run: cd jmdjr.github.io && npm run test:headless
     - name: Build
       run: npm run build
     - name: Deploy
@@ -26,7 +26,7 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ../../dist/browser
+        publish_dir: ../dist/browser
   deploy:
     runs-on: ubuntu-latest
     needs: build-and-commit
