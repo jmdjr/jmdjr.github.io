@@ -14,8 +14,8 @@ import { HEADING } from '../assets/site.data';
 })
 export class AppComponent {
   modules: ComponentModule[] = [
-    new ComponentModule(CodeProjectsComponent),
     new ComponentModule(DescriptionComponent),
+    new ComponentModule(CodeProjectsComponent),
     new ComponentModule(TechnologiesComponent)
   ]
 
