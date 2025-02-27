@@ -31,6 +31,16 @@ export const COMPANY_WORKS: CompanyWork[] = [
 
 export const PROJECTS: CodeProject[] = [
   {
+    name: `Number Block Game`,
+    description: `A concept I am planning, based off the children's YT videos and using the `,
+    links: [
+      {
+        text: 'Number Blocks Game',
+        URL: 'https://jmdjr.github.io/number-blocks/'
+      }
+    ]
+  },
+  {
     name: `Chat AI`,
     description: `Try your personally hosted AIs here, this page makes a connection to the ip address you provide, 
     and attempts to chat with it as if its an AI!`,
@@ -48,16 +58,6 @@ export const PROJECTS: CodeProject[] = [
       {
         text: 'Fun with Javascript',
         URL: 'https://jmdjr.github.io/FunWithJavascript/'
-      }
-    ]
-  },
-  {
-    name: `Number Block Game`,
-    description: `A concept I am planning, based off the children's YT videos and using the `,
-    links: [
-      {
-        text: 'Number Blocks Game',
-        URL: 'https://jmdjr.github.io/number-blocks/'
       }
     ]
   },

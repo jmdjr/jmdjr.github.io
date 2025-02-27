@@ -12,6 +12,7 @@ import { CarouselItemDirective } from '../../Support/_carousels/carousel-item-di
 })
 export class CodeProjectsComponent {
   usePlugins: string[] = [
+    "autoSwitcher",
     "stackCard"
   ];
 

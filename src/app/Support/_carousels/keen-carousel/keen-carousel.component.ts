@@ -35,12 +35,13 @@ export class KeenCarouselComponent implements AfterViewInit, OnInit {
 
   private PluginsMap = new Map<string, KeenPlugin>(
     [
-      ["stackCard", stackCard(this.stackWidthFactor ?? 1)]
-      , ["polygon3D", polygon3D]
+      ["stackCard", stackCard(this.stackWidthFactor ?? 1)], 
+      ["polygon3D", polygon3D],
     ]);
 
   ngOnInit(): void {
     this.OnShareComponent?.emit(this);
+    this.PluginsMap.set("autoSwitcher", autoSwitcher(this.autoPlayAnimationMiliseconds || 1000))
   }
 
   constructor(

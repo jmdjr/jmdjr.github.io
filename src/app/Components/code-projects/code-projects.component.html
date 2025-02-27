@@ -2,6 +2,7 @@
 </div>
 <div class="projects-slider" *ngIf="MyProjects.length">
   <keen-carousel id='carousel' [plugins]="usePlugins"
+  [autoPlayAnimationMiliseconds]="5000"
     [items]="MyProjects" [setPerspective]="perspectiveAmount" [stackWidthFactor]="1"
     >
     <div *CarouselItem="let item" class="card">
