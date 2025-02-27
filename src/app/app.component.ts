@@ -4,7 +4,8 @@ import { CodeProjectsComponent } from './Components/code-projects/code-projects.
 import { DescriptionComponent } from './Components/description/description.component';
 import { TechnologiesComponent } from './Components/technologies/technologies.component';
 import { HeaderService } from 'personal-site-template/src/app/services/header.service';
-import { HEADING } from '../assets/site.data';
+import { HEADING, PROJECT_NAME } from '../assets/site.data';
+import { ProjectDataTrackerService } from 'personal-site-template/src/app/services/ProjectDataTracker.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,10 @@ export class AppComponent {
     new ComponentModule(TechnologiesComponent)
   ]
 
-  constructor(private header: HeaderService) {
+  constructor(private header: HeaderService,
+    private project: ProjectDataTrackerService
+  ) {
     this.header.heading = HEADING;
+    this.project.name = PROJECT_NAME;
   }
 }

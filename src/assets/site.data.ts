@@ -3,6 +3,8 @@ export const HEADING =
   `John Davis Jr
 <br />Software Engineer`;
 
+export const PROJECT_NAME = 'jmdjr.github.io';
+
 export const SUBTITLE_LIST = [
   "Game Designer"
 ]
