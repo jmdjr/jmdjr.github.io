@@ -57,7 +57,7 @@ jobs:
     # - name: Run tests
     #   run: cd Shutdown/jmdjr.github.io && npm run test:headless
     - name: Build
-      run: npx ng build --base-href=/${{ github.event.repository.name }}/
+      run: npx ng build
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@v3
       with:
