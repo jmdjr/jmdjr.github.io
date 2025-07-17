@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-technologies',
   templateUrl: './technologies.component.html',
-  styleUrls: ['./technologies.component.less'],
+  styleUrls: ['./technologies.component.css'],
   imports: [CommonModule]
 })
 export class TechnologiesComponent {

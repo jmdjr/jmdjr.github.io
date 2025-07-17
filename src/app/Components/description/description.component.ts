@@ -4,7 +4,7 @@ import { DESCRIPTION } from '../../../assets/site.data';
 @Component({
   selector: 'app-description',
   templateUrl: './description.component.html',
-  styleUrls: ['./description.component.less']
+  styleUrls: ['./description.component.css']
 })
 export class DescriptionComponent {
   get description() { return DESCRIPTION; }
