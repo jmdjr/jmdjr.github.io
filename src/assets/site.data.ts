@@ -52,6 +52,16 @@ export const PROJECTS: CodeProject[] = [
     ]
   },
   {
+    name: `Pattern Lock Game`,
+    description: `Mastermind meets lock screen passwords. Can you guess the pattern?`,
+    links: [
+      {
+        text: 'Pattern Lock Game',
+        URL: 'https://jmdjr.github.io/PatternLock-Game/'
+      }
+    ]
+  },
+  {
     name: `Fun With Javascript`,
     description: `Small Javascript/Jquery based projects I made to have fun and show off.`,
     links: [

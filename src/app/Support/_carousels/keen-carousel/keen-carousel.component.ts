@@ -35,7 +35,7 @@ export class KeenCarouselComponent implements AfterViewInit, OnInit {
 
   private PluginsMap = new Map<string, KeenPlugin>(
     [
-      ["stackCard", stackCard(this.stackWidthFactor ?? 1)], 
+      ["stackCard", stackCard(this.stackWidthFactor ?? 1, -5)], 
       ["polygon3D", polygon3D],
     ]);
 
