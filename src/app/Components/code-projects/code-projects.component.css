@@ -3,12 +3,13 @@
   margin-top: 100px;
   height: 300px;
 }
+
 .card {
   border-radius: 10px;
   border: solid white 1px;
   background-color: black;
-  height: 300px;
-  width: 300px;
+  height: 325px;
+  width: 350px;
   padding: 20px;
   display:flex;
   align-items:flex-start;
@@ -41,4 +42,13 @@
   background-color: #050505;
   border: 1px solid #111;
   box-sizing:border-box;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    height: 360px;
+    width: 350px;
+    padding: 10px;
+    gap: 10px;
+  }
 }
