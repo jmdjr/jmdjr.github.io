@@ -9,5 +9,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 for setup of new projects under the personal-site-template, refer to that project's readme.
 
 # Updating submodule
-
-git submodule update --init --remote --recursive
+git submodule update --init --remote --recursive` 
